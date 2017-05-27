@@ -8,7 +8,7 @@
   };
 
   headlines.prototype.getAPI = function() {
-    return this._api;
+    return this._api.response.results;
   };
 
   exports.headlines = headlines;
