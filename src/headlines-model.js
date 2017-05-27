@@ -11,9 +11,13 @@
     return this._api;
   };
 
-  // headlines.prototype.displayAPI = function () {
-  //   var objects = this.getAPI();
-  // }
+  headlines.prototype.getAPIwebTitle = function(object) {
+    return object.webTitle;
+  };
+
+  headlines.prototype.displayAPI = function () {
+    return this._api.forEach(getAPIwebTitle(object));
+  };
 
   exports.headlines = headlines;
 })(this);

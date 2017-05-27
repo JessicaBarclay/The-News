@@ -7,6 +7,7 @@ function loadAPI() {
       headlines.recieveAPIrequest(JSON.parse(this.response));
       console.log(headlines.getAPI());
       document.getElementById("headlines").innerHTML = headlines.getAPI();
+      console.log(headlines.displayAPI());
     }
   };
 
