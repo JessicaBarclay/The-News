@@ -4,12 +4,16 @@
   }
 
   headlines.prototype.recieveAPIrequest = function(data) {
-    this._api = data;
+    this._api = data.response.results;
   };
 
   headlines.prototype.getAPI = function() {
-    return this._api.response.results;
+    return this._api;
   };
+
+  // headlines.prototype.displayAPI = function () {
+  //   var objects = this.getAPI();
+  // }
 
   exports.headlines = headlines;
 })(this);
