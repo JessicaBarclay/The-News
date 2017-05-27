@@ -15,5 +15,9 @@
     });
   };
 
+  view.prototype.displayData = function () {
+    
+  };
+
   exports.view = view;
 })(this);
