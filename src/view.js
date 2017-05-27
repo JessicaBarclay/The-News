@@ -16,8 +16,13 @@
   };
 
   view.prototype.displayData = function () {
-    
+    var htmlTitle = "<ul>";
+    this._webTitles.forEach(function(title) {
+      htmlTitle += ("<li>" + title + "</li>");
+    });
+    return htmlTitle + "</ul>";
   };
 
   exports.view = view;
+  
 })(this);
