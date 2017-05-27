@@ -11,12 +11,5 @@
     return this._api;
   };
 
-  headlines.prototype.displayAPI = function () {
-    this._api.forEach(function(object) {
-      console.log(object.webTitle);
-      return object.webTitle;
-    });
-  };
-
   exports.headlines = headlines;
 })(this);
