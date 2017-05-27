@@ -5,9 +5,8 @@ function loadAPI() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       headlines.recieveAPIrequest(JSON.parse(this.response));
-      console.log(headlines.getAPI());
       document.getElementById("headlines").innerHTML = headlines.getAPI();
-      console.log(headlines.displayAPI());
+      headlines.displayAPI();
     }
   };
 
