@@ -5,10 +5,9 @@
     this._webUrls = [];
   }
 
-  view.prototype.displayAPI = function () {
+  view.prototype.receiveData = function () {
     var self = this;
     headlines._api.forEach(function(object) {
-      // console.log(object);
       console.log(object.webTitle);
       console.log(object.webUrl);
       self._webTitles.push(object.webTitle);

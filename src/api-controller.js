@@ -6,7 +6,7 @@ function loadAPI() {
     if (this.readyState == 4 && this.status == 200) {
       headlines.recieveAPIrequest(JSON.parse(this.response));
       document.getElementById("headlines").innerHTML = headlines.getAPI();
-      view.displayAPI();
+      view.receiveData();
     }
   };
 
